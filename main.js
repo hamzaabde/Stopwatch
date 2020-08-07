@@ -27,10 +27,10 @@ class Stopwatch {
 		if(duration === 0 || running || cd) throw new Error('Stopwatch not paused');
 
 		running = true;
-
+		let tmp = duration;
 		time = new Date();
 		intvl = setInterval(() => {
-			duration += (new Date().getTime() - time.getTime()) / 1000;
+			duration = tmp + (new Date().getTime() - time.getTime()) / 1000;
 		}, 1);
 	}
 
