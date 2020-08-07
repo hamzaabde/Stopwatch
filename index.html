@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Stopwatch App</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="utility.js"></script>
 	<script src="main.js"></script>
 </head>
 <body>
@@ -14,15 +15,15 @@
 			<span class="digit" id="min">00</span>
 			<span class="digit" id="sec">00</span>
 			<span id="arrows">
-				<span id="up"></span>
-				<span id="down"></span>
+				<span class="dot" id="up"></span>
+				<span class="dot" id="down"></span>
 			</span>
 		</div>
 		<div class="controls">
-			<span class="btn" active="false">start</span>
-			<span class="btn" active="false">stop</span>
-			<span class="btn" active="false">reset</span>
-			<span class="btn" active="false">countdown</span>
+			<span class="btn" id="start">start</span>
+			<span class="btn" id="stop">stop</span>
+			<span class="btn" id="reset">reset</span>
+			<span class="btn" id="countDown">countdown</span>
 		</div>
 	</div>
 </body>
